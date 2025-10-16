@@ -1,0 +1,21 @@
+================================================================================
+UNIT TEST REPORT - ACCOUNT REGISTRATION
+Function: registerAccount(username, password, email)
+Time: 08/10/2025 16:07:53
+================================================================================
+
+UTCID      | Username     | Password     | Email                     | Expected | Actual   | Status
+--------------------------------------------------------------------------------
+UTCID01    | john123      | Pass123$     | john@example.com          | true     | true     | PASS  
+UTCID02    | (empty)      | pass123      | john@example.com          | false    | false    | PASS  
+UTCID03    | alice        | short        | alice@mail.com            | false    | false    | PASS  
+UTCID04    | bob123       | password     | bobmail.com               | false    | false    | PASS  
+UTCID05    | carol        | password     | carol@domain.com          | true     | true     | PASS  
+--------------------------------------------------------------------------------
+
+TEST SUMMARY:
+  Total Test Cases: 5
+  Passed: 5 (100.00%)
+  Failed: 0 (0.00%)
+
+================================================================================
